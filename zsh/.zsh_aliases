@@ -3,7 +3,7 @@
 #################################################################################
 
 alias zs='source ~/.zshrc'
-alias zshrc='vim ~/.zshrc'
+alias zshrc='code ~/.zshrc'
 alias c='code .'
 alias l='ls -F' # List files in current directory, -F appends / to directories
 alias ll='ls -alhF' # List all files in current directory in long list format -h is human r    eadable size i.e. 10kb 2mb etc
@@ -22,6 +22,24 @@ alias nd='npm run dev | npm run start:dev'
 alias ni='npm i'
 alias nid='npm i -D'
 alias nu='npm uninstall'
+
+
+
+#################################################################################          
+# 💡 Yarn Aliases
+#################################################################################
+
+alias y="yarn"
+alias ya="yarn add"
+alias yad="yarn add --dev"
+alias ys="yarn start"
+alias yd="yarn dev | yarn start:dev"
+alias yt="yarn test"
+alias yf="yarn format"
+alias yi="yarn init -y"
+alias yln="yarn lint"
+alias ylnf="yarn lint --fix"
+alias yrm="yarn remove"
 
 #################################################################################
 # 💾 GIT Aliases
