@@ -10,6 +10,26 @@ alias ll='ls -alhF' # List all files in current directory in long list format -h
 alias ipe='curl ipinfo.io/ip' # print external IP address
 alias histg='history' # usage hg cat would show all commands from history that contain *cat*
 alias fhere='find . -iname' # search for a file in this and the nested directories case insensitive, use \* to escape asterix
+alias _='sudo '
+
+
+#################################################################################          
+# 💡 Docker Aliases
+#################################################################################
+alias dcdn='docker-compose down'
+alias dcin='docker container inspect'
+alias dcl='docker-compose logs'
+alias dcup='docker-compose up'
+alias dcupb='docker-compose up --build'
+alias dcupd='docker-compose up -d'
+alias dcupdb='docker-compose up -d --build'
+alias dib='docker image build'
+alias dii='docker image inspect'
+alias dils='docker image ls'
+alias dirm='docker image rm'
+alias dlo='docker container logs'
+alias dvls='docker volume ls'
+alias dvprune='docker volume prune'
 
 #################################################################################          
 # 💡 Npm Aliases
@@ -60,12 +80,13 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias glast='git log -1 HEAD' # last commit
 alias glo='git log --oneline -n 10'
 alias gl-stat='git log --oneline --no-merges --stat'
-alias gpll='git pull' 
+alias gpull='git pull origin "$(git_current_branch)"' 
 alias g-unsafe-pull-rebase='git pull --rebase --autostash'
-alias gpsh='git push'
+alias gpush='git push origin "$(git_current_branch)"'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gcom='git checkout master'
+alias gcod='git checkout $(git_develop_branch)'
 alias gra='git remote add'
 alias grset='git remote set-url'
 alias grv='git remote -v'
